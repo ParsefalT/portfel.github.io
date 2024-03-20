@@ -1,4 +1,17 @@
 :root {
+  /* My var */
+  --black: #16171d;
+	--gray: #afb2bf;
+	--violetDark: #2e2d3d;
+  --primaryHover: #452481;
+	--links: #a97bff;
+	--white: #fafafa;
+	--red: #cc384e;
+	--primary: #6c38cc;
+  --primary-light: #7653fc;
+  --primary-hover: #3f20bd;
+  /* --- --- */
+
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
@@ -81,18 +94,16 @@
 
 html,
 body {
+  width: 1200px;
   max-width: 100vw;
+  margin: 0 auto;
   overflow-x: hidden;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  /* color: rgb(var(--foreground-rgb)); */
+  color: white !important;
+  background-color: var(--black) !important;
 }
 
 a {
