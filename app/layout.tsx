@@ -1,7 +1,7 @@
 "use client";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
+import { Inter } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Provider } from "react-redux";
 import { store } from "@/storeRedux/store";
