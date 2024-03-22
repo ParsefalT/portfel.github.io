@@ -22,8 +22,7 @@
 	margin-right: auto;
 	color: var(--nav-text);
 	font-size: 24px;
-	font-family: 'Poppins', sans-serif;
-    text-decoration: none;
+	/* font-family: 'Poppins', sans-serif; */
 }
 
 .logo strong {
@@ -38,20 +37,24 @@
 	column-gap: 30px;
 	font-size: 16px;
 	font-weight: 500;
-	font-family: 'Poppins', sans-serif;
+	/* font-family: 'Poppins', sans-serif; */
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-  .nav-list__link {
-  text-decoration: none;
+.nav-list a {
+	font-size: 24px;
+	text-decoration: none;
+}
+
+.nav-list__link {
 	color: var(--nav-text);
-	transition: opacity 0.2s ease-in;
+	transition: all 0.2s ease-in;
 }
 
 .nav-list__link:hover {
-	opacity: 0.8;
+	opacity: 0.6;
 }
 
 .nav-list__link--active {

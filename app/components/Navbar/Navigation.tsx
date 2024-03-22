@@ -5,12 +5,13 @@ import styles from "./Navigation.module.css";
 // ---svgrIcons---
 import MoonSvg from "../../assets/icons/moon.svg";
 import SunSvg from "../../assets/icons/sun.svg";
-
+import Image from "next/image";
 export const Navigation = () => {
 	return (
 		<nav className={styles["nav"]}>
 			<Link href="/" className={styles["logo"]}>
-				<strong>portfolio</strong>
+				{/* <strong>Parsefal</strong> */}
+				<Image src="/images/Parsefal.png" alt="parsefal" width={250} height={50} />
 			</Link>
 
 			<ul className={styles["nav-list"]}>
@@ -20,12 +21,12 @@ export const Navigation = () => {
 					</Link>
 				</li>
 				<li className={styles["nav-list__item"]}>
-					<Link href="/projects" className={styles["nav-list__link"]}>
+					<Link href="/dashboards/projects" className={styles["nav-list__link"]}>
 						Projects
 					</Link>
 				</li>
 				<li className={styles["nav-list__item"]}>
-					<Link href="/contacts" className={styles["nav-list__link"]}>
+					<Link href="/dashboards/contacts" className={styles["nav-list__link"]}>
 						Contacts
 					</Link>
 				</li>

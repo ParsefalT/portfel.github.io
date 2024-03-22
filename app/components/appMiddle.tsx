@@ -1,4 +1,4 @@
-export * from "./Navbarr/Navigation";
+export * from "./Navbar/Navigation";
 export * from "./Header/Header";
 export * from "./Main/Main";
 export * from "./Footer/Footer";

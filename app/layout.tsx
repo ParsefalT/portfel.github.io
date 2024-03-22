@@ -1,17 +1,11 @@
 "use client";
-import type { Metadata } from "next";
 import "./globals.css";
-import { Inter } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Inter } from "next/font/google";
 import { Provider } from "react-redux";
 import { store } from "@/storeRedux/store";
 
 const inter = Inter({ subsets: ["latin"] });
-
-// export const metadata: Metadata = {
-// 	title: "Portfel",
-// 	description: "TestPolygon",
-// };
 
 export default function RootLayout({
 	children,
@@ -28,6 +22,12 @@ export default function RootLayout({
 					crossOrigin="anonymous"
 					referrerPolicy="no-referrer"
 				/> */}
+				<link rel="preconnect" href="https://fonts.googleapis.com" />
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+				<link
+					href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap"
+					rel="stylesheet"
+				/>
 			</head>
 			<Provider store={store}>
 				<body className={inter.className}>{children}</body>
