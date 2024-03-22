@@ -5,13 +5,16 @@
 	padding: 12px 28px;
     text-decoration: none;
 	border-radius: 5px;
-	background-color: var(--accent);
 	color: var(--white);
 	letter-spacing: 0.15px;
 	font-size: 16px;
 	font-weight: 500;
     border: none;
 	transition: all .3s;
+}
+
+.mainBtn {
+	background-color: var(--accent);
 }
 
 .btn:hover {

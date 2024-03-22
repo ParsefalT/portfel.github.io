@@ -139,11 +139,6 @@ body {
   background-color: var(--black) !important;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

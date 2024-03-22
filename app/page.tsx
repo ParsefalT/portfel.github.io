@@ -19,7 +19,6 @@ export const metadata: Metadata = {
 export default function Home(): JSX.Element {
 	return (
 		<>
-			<Navigation />
 			<Header />
 			<Main />
 			<Footer />
