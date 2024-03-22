@@ -132,9 +132,6 @@ body {
   font-family: "Agbalumo", system-ui !important;
   font-weight: 400;
   font-style: normal;
-}
-
-body {
   color: white !important;
   background-color: var(--black) !important;
 }

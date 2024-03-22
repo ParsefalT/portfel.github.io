@@ -1,9 +1,9 @@
 import React from "react";
-import { IBtnrProps } from "./Btnr";
+import { IBtnrProps } from "./BtnCustom";
 import cn from "classnames";
-import styles from "./Btnrr.module.css";
+import styles from "./BtnCustom.module.css";
 
-export const Btnrr = ({ text, type }: IBtnrProps): JSX.Element => {
+export const BtnCustom = ({ text, type }: IBtnrProps): JSX.Element => {
 	return (
 		<button
 			className={cn(styles["btn"], {

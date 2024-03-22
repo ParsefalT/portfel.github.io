@@ -1,5 +1,5 @@
 import styles from "./Header.module.css";
-import { Btnrr } from "@/components/Btn/Btnrr";
+import { BtnCustom } from "@/components/BtnCustom/BtnCustom";
 export const Header = () => {
 	return (
 		<header className={styles["header"]}>
@@ -13,7 +13,7 @@ export const Header = () => {
 				<div className={styles["header__text"]}>
 					<p>with passion for learning and creating.</p>
 				</div>
-				<Btnrr text="Download CV" type="main" />
+				<BtnCustom text="Download CV" type="main" />
 			</div>
 		</header>
 	);
