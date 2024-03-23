@@ -2,6 +2,7 @@
 const nextConfig = {
 	distDir: "dist",
 	basePath: "/test-base",
+	output: "export",
 	reactStrictMode: true,
 	webpack(config) {
 		// Grab the existing rule that handles SVG imports
