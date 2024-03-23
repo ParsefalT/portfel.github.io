@@ -7,7 +7,7 @@ import MoonSvg from "../../assets/icons/moon.svg";
 import SunSvg from "../../assets/icons/sun.svg";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-export const Navbar = () => {
+export default function Navbar() {
 	const pathname = usePathname();
 
 	return (
@@ -54,4 +54,4 @@ export const Navbar = () => {
 			</button>
 		</nav>
 	);
-};
+}

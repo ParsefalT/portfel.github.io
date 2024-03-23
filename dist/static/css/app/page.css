@@ -93,6 +93,40 @@
 	top: 1px;
 }
 
+/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./components/Main/Main.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************/
+/* Content list */
+.Main_section__qMy4l {
+	padding: 70px 0;
+}
+
+.Main_content-list___dwU1 {
+    margin: 0 auto;
+    max-width: 570px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+}
+
+.Main_content-list___dwU1 a {
+	color: var(--accent);
+}
+
+.Main_content-list__item__A3hZK {
+	font-size: 18px;
+	line-height: 1.5;
+  
+}
+
+.Main_content-list__item__A3hZK p + p {
+	margin-top: 0.5em;
+}
+
 /*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./components/Footer/Footer.module.css ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************/
@@ -135,39 +169,5 @@
 .LinkCustom_social__icon__YKpms:hover {
 	box-shadow: 0px 0px 20px 3px var(--primary-light);
 	transform: scale(1.15);
-}
-
-/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./components/Main/Main.module.css ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************/
-/* Content list */
-.Main_section__qMy4l {
-	padding: 70px 0;
-}
-
-.Main_content-list___dwU1 {
-    margin: 0 auto;
-    max-width: 570px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 40px;
-    text-align: center;
-    list-style: none;
-    padding: 0;
-}
-
-.Main_content-list___dwU1 a {
-	color: var(--accent);
-}
-
-.Main_content-list__item__A3hZK {
-	font-size: 18px;
-	line-height: 1.5;
-  
-}
-
-.Main_content-list__item__A3hZK p + p {
-	margin-top: 0.5em;
 }
 
