@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	distDir: "dist",
-	basePath: "/dist",
+	basePath: "/test-base",
 	reactStrictMode: true,
 	webpack(config) {
 		// Grab the existing rule that handles SVG imports
