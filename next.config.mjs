@@ -26,8 +26,8 @@ const nextConfig = {
 
 		return config;
 	},
+	basePath: "/2048-in-react",
 	output: "export",
-	distDir: "./dist",
 };
 
 export default nextConfig;
