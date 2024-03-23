@@ -1,5 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+	output: "export",
+	distDir: "dist",
+	images: {
+		unoptimized: true,
+	},
 	reactStrictMode: true,
 	webpack(config) {
 		// Grab the existing rule that handles SVG imports
@@ -26,8 +31,6 @@ const nextConfig = {
 
 		return config;
 	},
-	basePath: "/2048-in-react",
-	output: "export",
 };
 
 export default nextConfig;
