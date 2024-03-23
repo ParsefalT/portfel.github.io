@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Inter } from "next/font/google";
 import { Provider } from "react-redux";
 import { store } from "@/storeRedux/store";
-import { Navigation } from "./components/appMiddle";
+import { Navbar } from "./components/appMiddle";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,7 +32,7 @@ export default function RootLayout({
 			</head>
 			<Provider store={store}>
 				<body className={inter.className}>
-					<Navigation />
+					<Navbar />
 					{children}
 				</body>
 			</Provider>

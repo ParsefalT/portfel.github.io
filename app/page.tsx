@@ -4,7 +4,7 @@ import styled from "styled-components";
 import cn from "classnames";
 
 // ---myComponents---
-import { Navigation, Header, Main, Footer } from "./components/appMiddle";
+import { Header, Main, Footer } from "./components/appMiddle";
 import { Metadata } from "next";
 // function useLocation() {
 // 	const [data, setData] = useState();

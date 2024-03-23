@@ -1,11 +1,11 @@
 import styles from "./Footer.module.css";
-import { LinkCustomr } from "@/components/LinkCustom/LinkCustomr";
+import { LinkCustom } from "@/components/LinkCustom/LinkCustom";
 export const Footer = (): JSX.Element => {
 	return (
 		<footer className={styles["footer"]}>
 			<ul className={styles["social"]}>
 				<li className={styles["social__item"]}>
-					<LinkCustomr src="/images/icons/vk.svg" href="#" width={40} height={40} alt="vk" />
+					<LinkCustom src="/images/icons/vk.svg" href="#" width={40} height={40} alt="vk" />
 					{/* <a href="#!">
 						<Image
 							src="/images/icons/vk.svg"
@@ -17,7 +17,7 @@ export const Footer = (): JSX.Element => {
 					</a> */}
 				</li>
 				<li className={styles["social__item"]}>
-					<LinkCustomr
+					<LinkCustom
 						src="/images/icons/instagram.svg"
 						href="#"
 						width={40}
@@ -35,7 +35,7 @@ export const Footer = (): JSX.Element => {
 					</a> */}
 				</li>
 				<li className={styles["social__item"]}>
-					<LinkCustomr
+					<LinkCustom
 						src="/images/icons/gitHub.svg"
 						href="https://github.com/ParsefalT"
 						width={40}

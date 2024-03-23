@@ -1,9 +1,9 @@
 import React from "react";
-import { IBtnrProps } from "./BtnCustom";
+import { IBtnProps } from "./BtnCustom.interface";
 import cn from "classnames";
 import styles from "./BtnCustom.module.css";
 
-export const BtnCustom = ({ text, type }: IBtnrProps): JSX.Element => {
+export const BtnCustom = ({ text, type }: IBtnProps): JSX.Element => {
 	return (
 		<button
 			className={cn(styles["btn"], {
