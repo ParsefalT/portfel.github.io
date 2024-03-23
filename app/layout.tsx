@@ -32,7 +32,7 @@ export default function RootLayout({
 			</head>
 			<Provider store={store}>
 				<body className={inter.className}>
-					<Navbar />
+					{/* <Navbar /> */}
 					{children}
 				</body>
 			</Provider>
