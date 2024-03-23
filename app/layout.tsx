@@ -34,7 +34,7 @@ export default function RootLayout({
 			</head>
 			<Provider store={store}>
 				<body className={inter.className}>
-					<Navbar></Navbar>
+					{/* <Navbar></Navbar> */}
 					{children}
 				</body>
 			</Provider>
