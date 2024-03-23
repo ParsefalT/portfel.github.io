@@ -4,7 +4,7 @@ import styled from "styled-components";
 import cn from "classnames";
 
 // ---myComponents---
-import { Header, Main, Footer } from "./components/appMiddle";
+import { Header, Main, Footer } from "../components/appMiddle";
 import { Metadata } from "next";
 // import { Header } from "app/components/Header/Header";
 // import { Main } from "app/components/Main/Main";
