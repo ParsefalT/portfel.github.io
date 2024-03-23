@@ -4,11 +4,11 @@ import styled from "styled-components";
 import cn from "classnames";
 
 // ---myComponents---
-// import { Header, Main, Footer } from "../components/appMiddle";
+import { Header, Main, Footer } from "./components/appMiddle";
 import { Metadata } from "next";
-import { Header } from "@/components/Header/Header";
-import { Main } from "@/components/Main/Main";
-import { Footer } from "@/components/Footer/Footer";
+// import { Header } from "app/components/Header/Header";
+// import { Main } from "app/components/Main/Main";
+// import { Footer } from "app/components/Footer/Footer";
 // function useLocation() {
 // 	const [data, setData] = useState();
 //  CREATE_CUSTOM_HOOK
