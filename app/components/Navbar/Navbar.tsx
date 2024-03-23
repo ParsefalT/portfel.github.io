@@ -13,7 +13,7 @@ export const Navbar = () => {
 
 	return (
 		<nav className={styles["nav"]}>
-			{/* <Link href="/" className={styles["logo"]}>
+			<Link href="/" className={styles["logo"]}>
 				<Image src="/images/Parsefal.png" alt="parsefal" width={250} height={50} />
 			</Link>
 
@@ -48,7 +48,7 @@ export const Navbar = () => {
 						Contacts
 					</Link>
 				</li>
-			</ul> */}
+			</ul>
 			<button className={styles["dark-mode-btn"]}>
 				<MoonSvg className={styles["dark-mode-btn__icon"]} />
 				<SunSvg className={styles["dark-mode-btn__icon"]} />
