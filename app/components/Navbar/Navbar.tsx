@@ -1,4 +1,3 @@
-"use client";
 import Link from "next/link";
 import styles from "./Navbar.module.css";
 import cn from "classnames";
@@ -13,14 +12,14 @@ export const Navbar = () => {
 
 	return (
 		<nav className={styles["nav"]}>
-			<Link href="/" className={styles["logo"]}>
+			<Link href={{ pathname: "/" }} className={styles["logo"]}>
 				<Image src="/images/Parsefal.png" alt="parsefal" width={250} height={50} />
 			</Link>
 
 			<ul className={styles["nav-list"]}>
 				<li className={styles["nav-list__item"]}>
 					<Link
-						href="/"
+						href={{ pathname: "/" }}
 						className={cn(styles["nav-list__link"], {
 							[styles["active"]]: pathname == "/",
 						})}
@@ -30,7 +29,7 @@ export const Navbar = () => {
 				</li>
 				<li className={styles["nav-list__item"]}>
 					<Link
-						href="/pages/projects"
+						href={{ pathname: "/pages/projects" }}
 						className={cn(styles["nav-list__link"], {
 							[styles["active"]]: pathname == "/pages/projects",
 						})}
@@ -40,7 +39,7 @@ export const Navbar = () => {
 				</li>
 				<li className={styles["nav-list__item"]}>
 					<Link
-						href="/pages/contacts"
+						href={{ pathname: "/pages/contacts" }}
 						className={cn(styles["nav-list__link"], {
 							[styles["active"]]: pathname == "/pages/contacts",
 						})}
