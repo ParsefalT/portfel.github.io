@@ -12,9 +12,9 @@ const Navbar = () => {
 
 	return (
 		<nav className={styles["nav"]}>
-			<Link href={{ pathname: "/" }} className={styles["logo"]}>
+			{/* <Link href={{ pathname: "/" }} className={styles["logo"]}>
 				<Image src="/images/Parsefal.png" alt="parsefal" width={250} height={50} />
-			</Link>
+			</Link> */}
 
 			<ul className={styles["nav-list"]}>
 				<li className={styles["nav-list__item"]}>
