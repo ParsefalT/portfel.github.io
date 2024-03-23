@@ -1,11 +1,10 @@
 import Link from "next/link";
 
-const Projects = () => {
+export default function Projects() {
 	return (
 		<>
 			<h1>Projects</h1>
 			<Link href="/">Home</Link>
 		</>
 	);
-};
-export default Projects;
+}
