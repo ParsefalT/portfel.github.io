@@ -1,5 +1,3 @@
-/* eslint-disable @next/next/no-page-custom-font */
-"use client";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Inter } from "next/font/google";
@@ -34,7 +32,7 @@ export default function RootLayout({
 			</head>
 			<Provider store={store}>
 				<body className={inter.className}>
-					{/* <Navbar></Navbar> */}
+					<Navbar />
 					{children}
 				</body>
 			</Provider>
