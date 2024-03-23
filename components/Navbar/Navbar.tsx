@@ -12,30 +12,30 @@ const Navbar = () => {
 
 	return (
 		<nav className={styles["nav"]}>
-			{/* <Link href={{ pathname: "/" }} className={styles["logo"]}>
+			<Link href={{ pathname: "/" }} className={styles["logo"]}>
 				<Image src="/images/Parsefal.png" alt="parsefal" width={250} height={50} />
-			</Link> */}
+			</Link>
 
 			<ul className={styles["nav-list"]}>
 				<li className={styles["nav-list__item"]}>
-					{/* <Link
+					<Link
 						href={{ pathname: "/" }}
 						className={cn(styles["nav-list__link"], {
 							[styles["active"]]: pathname == "/",
 						})}
 					>
 						Home
-					</Link> */}
+					</Link>
 				</li>
 				<li className={styles["nav-list__item"]}>
-					{/* <Link
+					<Link
 						href={{ pathname: "/pages/projects" }}
 						className={cn(styles["nav-list__link"], {
 							[styles["active"]]: pathname == "/pages/projects",
 						})}
 					>
 						Projects
-					</Link> */}
+					</Link>
 				</li>
 				<li className={styles["nav-list__item"]}>
 					{/* <Link
