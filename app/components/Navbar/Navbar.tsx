@@ -32,7 +32,7 @@ export const Navbar = () => {
 					<Link
 						href="/pages/projects"
 						className={cn(styles["nav-list__link"], {
-							[styles["active"]]: pathname == "/dashboards/projects",
+							[styles["active"]]: pathname == "/pages/projects",
 						})}
 					>
 						Projects
@@ -42,7 +42,7 @@ export const Navbar = () => {
 					<Link
 						href="/pages/contacts"
 						className={cn(styles["nav-list__link"], {
-							[styles["active"]]: pathname == "/dashboards/contacts",
+							[styles["active"]]: pathname == "/pages/contacts",
 						})}
 					>
 						Contacts
