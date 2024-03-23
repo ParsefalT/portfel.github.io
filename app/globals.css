@@ -13,7 +13,6 @@
 	--blackpure: #000;
 	--black: #171718;
 	--black-border: #26292d;
-	--white: #fff;
 	--purple: #5c62ec;
 
 	/* Nav */
@@ -134,8 +133,12 @@ body {
   font-style: normal;
   color: white !important;
   background-color: var(--black) !important;
+  transition: all .4s;
 }
 
+/* .light {
+  background-color: var(--gray) !important;
+} */
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

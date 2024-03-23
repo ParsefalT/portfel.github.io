@@ -1,4 +1,8 @@
+import { ReactNode } from "react";
+
 export interface IBtnProps {
-	text: string;
 	type?: string;
+	className: string;
+	value?: string;
+	children?: ReactNode[];
 }

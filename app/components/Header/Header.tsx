@@ -13,7 +13,7 @@ export const Header = () => {
 				<div className={styles["header__text"]}>
 					<p>with passion for learning and creating.</p>
 				</div>
-				<BtnCustom text="Download CV" type="main" />
+				<BtnCustom className="btn" value="Download CV" type="main" />
 			</div>
 		</header>
 	);

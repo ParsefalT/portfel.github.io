@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import cn from "classnames";
 import { ILinkCustomProps } from "./LinkCustom.interface";

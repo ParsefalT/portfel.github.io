@@ -1,3 +1,4 @@
+import { PText } from "@/components/PText/PTextCustom";
 import styles from "./Footer.module.css";
 import { LinkCustom } from "@/components/LinkCustom/LinkCustom";
 export const Footer = (): JSX.Element => {
@@ -6,15 +7,6 @@ export const Footer = (): JSX.Element => {
 			<ul className={styles["social"]}>
 				<li className={styles["social__item"]}>
 					<LinkCustom src="/images/icons/vk.svg" href="#" width={40} height={40} alt="vk" />
-					{/* <a href="#!">
-						<Image
-							src="/images/icons/vk.svg"
-							width={40}
-							height={40}
-							alt="vk"
-							className={styles["social__icon"]}
-						/>
-					</a> */}
 				</li>
 				<li className={styles["social__item"]}>
 					<LinkCustom
@@ -24,15 +16,6 @@ export const Footer = (): JSX.Element => {
 						height={40}
 						alt="instagram"
 					/>
-					{/* <a href="#!">
-						<Image
-							src="/images/icons/instagram.svg"
-							width={40}
-							height={40}
-							alt="instagram"
-							className={styles["social__icon"]}
-						/>
-					</a> */}
 				</li>
 				<li className={styles["social__item"]}>
 					<LinkCustom
@@ -42,19 +25,10 @@ export const Footer = (): JSX.Element => {
 						height={40}
 						alt="gitHub"
 					/>
-					{/* <a href="https://github.com/ParsefalT" target="_blank">
-						<Image
-							src="/images/icons/gitHub.svg"
-							width={40}
-							height={40}
-							alt="gitHub"
-							className={styles["social__icon"]}
-						/>
-					</a> */}
 				</li>
 			</ul>
 			<div className={styles["copyright"]}>
-				<p>© 2024 - web developer</p>
+				<PText text="© 2024 - web developer" />
 			</div>
 		</footer>
 	);

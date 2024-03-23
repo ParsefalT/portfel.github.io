@@ -7,6 +7,7 @@ import MoonSvg from "../../../assets/icons/moon.svg";
 import SunSvg from "../../../assets/icons/sun.svg";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { BtnCustom } from "@/components/BtnCustom/BtnCustom";
 export const Navbar = () => {
 	const pathname = usePathname();
 
@@ -48,10 +49,11 @@ export const Navbar = () => {
 					</Link>
 				</li>
 			</ul>
-			<button className={styles["dark-mode-btn"]}>
+
+			<BtnCustom type="lightMode" className="dark-mode-btn">
 				<MoonSvg className={styles["dark-mode-btn__icon"]} />
 				<SunSvg className={styles["dark-mode-btn__icon"]} />
-			</button>
+			</BtnCustom>
 		</nav>
 	);
 };
