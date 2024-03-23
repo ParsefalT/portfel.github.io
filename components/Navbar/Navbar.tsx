@@ -38,14 +38,14 @@ const Navbar = () => {
 					</Link>
 				</li>
 				<li className={styles["nav-list__item"]}>
-					<Link
+					{/* <Link
 						href={{ pathname: "/pages/contacts" }}
 						className={cn(styles["nav-list__link"], {
 							[styles["active"]]: pathname == "/pages/contacts",
 						})}
 					>
 						Contacts
-					</Link>
+					</Link> */}
 				</li>
 			</ul>
 			<button className={styles["dark-mode-btn"]}>
