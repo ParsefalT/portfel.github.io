@@ -11,7 +11,7 @@ export const BtnCustom = <IBtn extends IBtnProps>({
 	children,
 }: IBtn): JSX.Element => {
 	const [colorMode, setColorMode] = useState<boolean>(false);
-	const btnRef = useRef();
+	const btnRef = useRef<HTMLButtonElement | null>(null);
 
 	const toggleDarkMode = () => {
 		setColorMode((state) => !state);

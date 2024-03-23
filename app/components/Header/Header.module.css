@@ -41,7 +41,7 @@
 .header__title em {
 	font-style: normal;
 	color: var(--accent);
-	animation: pulse 1.5s ease-out 0s alternate infinite none running;
+	animation: pulse 2s linear 0s alternate infinite;
 }
 
 .header__text {
