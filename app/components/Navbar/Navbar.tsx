@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import styles from "./Navbar.module.css";
 import cn from "classnames";
@@ -8,7 +9,7 @@ import SunSvg from "../../../assets/icons/sun.svg";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { BtnCustom } from "@/components/BtnCustom/BtnCustom";
-export default function Navbar() {
+export const Navbar = () => {
 	const pathname = usePathname();
 
 	return (
@@ -56,4 +57,4 @@ export default function Navbar() {
 			</BtnCustom>
 		</nav>
 	);
-}
+};
