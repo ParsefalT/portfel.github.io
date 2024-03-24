@@ -6,6 +6,7 @@ import { Inter } from "next/font/google";
 import { Provider } from "react-redux";
 import { store } from "@/storeRedux/store";
 import { Navbar } from "./components/appMiddle";
+import { sliceActions } from "@/storeRedux/slice";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,6 +15,7 @@ export default function RootLayout({
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
+	store.dispatch(sliceActions.show("asd"));
 	return (
 		<html lang="en">
 			<head>

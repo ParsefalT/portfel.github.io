@@ -138,6 +138,7 @@ body {
 
 /* .light {
   background-color: var(--gray) !important;
+  color: black ;
 } */
 @media (prefers-color-scheme: dark) {
   html {

@@ -16,7 +16,7 @@ export const sliceFirst = createSlice({
 	reducers: {
 		show: (state, action: PayloadAction<string>) => {
 			state.name = action.payload;
-			// console.log(state.bal);
+			console.log(state.name);
 		},
 		getler: (state, action: PayloadAction<string>) => {
 			state.password = action.payload;

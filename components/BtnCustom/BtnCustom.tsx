@@ -15,7 +15,6 @@ export const BtnCustom = <IBtn extends IBtnProps>({
 
 	const toggleDarkMode = () => {
 		setColorMode((state) => !state);
-		console.log(colorMode);
 	};
 
 	useEffect(() => {
@@ -26,6 +25,19 @@ export const BtnCustom = <IBtn extends IBtnProps>({
 		}
 	}, [colorMode]);
 
+	// fetch("https://raw.githubusercontent.com/ParsefalT/linuxHellper/main/linuxHelper", {
+	// 	method: "GET",
+	// 	mode: "cors",
+	// 	credentials: "omit",
+	// 	body: null,
+	// 	cache: "default",
+	// 	headers: {
+	// 		"Access-Control-Allow-Origin": "*",
+	// 		"Content-type": "text/html; charset=utf-8",
+	// 	},
+	// }).then((res) => console.log(res));
+
+	// https://raw.githubusercontent.com/ParsefalT/linuxHellper/main/linuxHelper.txt
 	return (
 		<button
 			ref={btnRef}
