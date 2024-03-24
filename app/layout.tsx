@@ -11,7 +11,7 @@ import { sliceActions } from "@/storeRedux/slice";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
-	children,
+	children = null,
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
