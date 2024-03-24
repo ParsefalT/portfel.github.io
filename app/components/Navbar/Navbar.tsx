@@ -8,7 +8,7 @@ import SunSvg from "../../../assets/icons/sun.svg";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { BtnCustom } from "@/components/BtnCustom/BtnCustom";
-export const Navbar = () => {
+export default function Navbar() {
 	const pathname = usePathname();
 
 	return (
@@ -56,4 +56,4 @@ export const Navbar = () => {
 			</BtnCustom>
 		</nav>
 	);
-};
+}

@@ -1,4 +1,3 @@
-const Contacts = () => {
+export default function Contacts(): JSX.Element {
 	return <h1>contacts</h1>;
-};
-export default Contacts;
+}
