@@ -1,6 +1,6 @@
 /* Content list */
 .section {
-	padding: 70px 0;
+	padding: 40px 0;
 }
 
 .content-list {
@@ -25,6 +25,11 @@
   
 }
 
+.title-2 {
+    font-size: 2em;
+}
+
+.content-list__item div + div,
 .content-list__item p + p {
 	margin-top: 0.5em;
 }
