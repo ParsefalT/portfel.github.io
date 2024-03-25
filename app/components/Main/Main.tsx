@@ -8,16 +8,18 @@ export const Main = (): JSX.Element => {
 				<ul className={styles["content-list"]}>
 					<li className={styles["content-list__item"]}>
 						<h2 className={styles["title-2"]}>Frontend</h2>
-						<Typewriter
-							options={{
-								strings: [
-									"HTML, CSS, SCSS/SASS, BootStrap, JavaScript, TypeScript, ReactJS, Redux, NPM, MaterialUI, TailwindCSS, StyledComponents, StyleX",
-								],
-								autoStart: true,
-								delay: 60,
-								loop: true,
-							}}
-						/>
+						<div className={styles["typewriter"]}>
+							<Typewriter
+								options={{
+									strings: [
+										"HTML, CSS, SCSS/SASS, BootStrap, JavaScript, TypeScript, ReactJS, Redux, NPM, MaterialUI, TailwindCSS, StyledComponents, StyleX",
+									],
+									autoStart: true,
+									delay: 60,
+									loop: true,
+								}}
+							/>
+						</div>
 					</li>
 					<li className={styles["content-list__item"]}>
 						<h2 className={styles["title-2"]}>Backend</h2>

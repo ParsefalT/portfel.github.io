@@ -29,6 +29,10 @@
     font-size: 2em;
 }
 
+.typewriter {
+    min-height: 60px;
+}
+
 .content-list__item div + div,
 .content-list__item p + p {
 	margin-top: 0.5em;
