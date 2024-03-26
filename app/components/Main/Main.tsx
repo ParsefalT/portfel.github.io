@@ -1,4 +1,5 @@
 "use client";
+import { HTag } from "@/components/HTag/HTag";
 import styles from "./Main.module.css";
 import Typewriter from "typewriter-effect";
 export const Main = (): JSX.Element => {
@@ -7,7 +8,7 @@ export const Main = (): JSX.Element => {
 			<div className={styles["container"]}>
 				<ul className={styles["content-list"]}>
 					<li className={styles["content-list__item"]}>
-						<h2 className={styles["title-2"]}>Frontend</h2>
+						<HTag type="h2">Frontend</HTag>
 						<div className={styles["typewriter"]}>
 							<Typewriter
 								options={{
@@ -22,7 +23,7 @@ export const Main = (): JSX.Element => {
 						</div>
 					</li>
 					<li className={styles["content-list__item"]}>
-						<h2 className={styles["title-2"]}>Backend</h2>
+						<HTag type="h2">Backend</HTag>
 						<p>NodeJS, MySQL, MongoDB, PHP</p>
 					</li>
 				</ul>

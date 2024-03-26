@@ -197,11 +197,15 @@ body {
 	font-size: 16px;
 	font-weight: 500;
     border: none;
-	transition: all .3s;
+	transition: all .1s ease-out;
 }
 
 .BtnCustom_mainBtn__wuPc_ {
 	background-color: var(--accent);
+}
+
+.BtnCustom_mainBtn__wuPc_:active {
+	background-color: var(--primary-hover);
 }
 
 .BtnCustom_btn__005cF:hover {
@@ -303,7 +307,7 @@ body {
 }
 
 .Navbar_nav-list__JUVa6 a {
-	font-size: 24px;
+	font-size: 20px;
 	text-decoration: none;
 }
 .Navbar_nav-list__link__zdJhb {
@@ -340,12 +344,40 @@ body {
 	position: relative;
 	z-index: 9;
 }
+/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./components/HTag/HTag.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************/
+.HTag_header__title__LXksT {
+	margin-bottom: 20px;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.4;
+    margin: 0;
+    margin-bottom: 35px;
+}
+
+.HTag_header__title__LXksT strong {
+	font-size: 60px;
+	font-weight: 700;
+}
+
+.HTag_header__title__LXksT em {
+	font-style: normal;
+	color: var(--accent);
+	animation: HTag_pulse__Np4T_ 2s linear 0s alternate infinite;
+}
+
+.HTag_title-2__JDLNj {
+    font-size: 2em;
+    margin: 0;
+    margin-bottom: 20px;
+}
 /*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./app/components/Header/Header.module.css ***!
   \***********************************************************************************************************************************************************************************************************************************************************************************/
 /* Header */
 .Header_header__hrF4W {
-	padding: 40px 0;
+	padding: 40px 0 0 0;
 	min-height: 695px;
 	display: flex;
 	justify-content: center;
@@ -369,28 +401,10 @@ body {
 .Header_header__wrapper__iITPU {
 	position: relative;
 	z-index: 1;
-}
-
-.Header_header__title__NbCBv {
-	margin-bottom: 20px;
-	font-size: 40px;
-	font-weight: 700;
-	line-height: 1.4;
-}
-
-.Header_header__title__NbCBv strong {
-	font-size: 60px;
-	font-weight: 700;
-}
-
-.Header_header__title__NbCBv em {
-	font-style: normal;
-	color: var(--accent);
-	animation: Header_pulse__flPDx 2s linear 0s alternate infinite;
-}
+}	
 
 .Header_header__text__LFrNe {
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 	font-size: 18px;
 	line-height: 1.333;
 }
@@ -436,7 +450,7 @@ body {
   \*******************************************************************************************************************************************************************************************************************************************************************************/
 /* Content list */
 .Main_section__oE_d5 {
-	padding: 40px 0;
+	padding: 20px 0;
 }
 
 .Main_content-list__jx5VN {
@@ -445,7 +459,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 40px;
+    row-gap: 30px;
     text-align: center;
     list-style: none;
     padding: 0;
@@ -459,10 +473,6 @@ body {
 	font-size: 18px;
 	line-height: 1.5;
   
-}
-
-.Main_title-2__xOWe7 {
-    font-size: 2em;
 }
 
 .Main_typewriter__15vyZ {

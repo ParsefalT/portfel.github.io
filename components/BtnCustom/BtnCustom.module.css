@@ -10,11 +10,15 @@
 	font-size: 16px;
 	font-weight: 500;
     border: none;
-	transition: all .3s;
+	transition: all .1s ease-out;
 }
 
 .mainBtn {
 	background-color: var(--accent);
+}
+
+.mainBtn:active {
+	background-color: var(--primary-hover);
 }
 
 .btn:hover {

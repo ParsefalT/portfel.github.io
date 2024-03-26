@@ -1,0 +1,25 @@
+.header__title {
+	margin-bottom: 20px;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.4;
+    margin: 0;
+    margin-bottom: 35px;
+}
+
+.header__title strong {
+	font-size: 60px;
+	font-weight: 700;
+}
+
+.header__title em {
+	font-style: normal;
+	color: var(--accent);
+	animation: pulse 2s linear 0s alternate infinite;
+}
+
+.title-2 {
+    font-size: 2em;
+    margin: 0;
+    margin-bottom: 20px;
+}

@@ -48,6 +48,16 @@ export const Navbar = () => {
 						Contacts
 					</Link>
 				</li>
+				{/* <li className={styles["nav-list__item"]}>
+					<Link
+						href={{ pathname: "/pages/recomendation" }}
+						className={cn(styles["nav-list__link"], {
+							[styles["active"]]: pathname == "/pages/recomendation",
+						})}
+					>
+						Recomendation
+					</Link>
+				</li> */}
 			</ul>
 
 			<BtnCustom type="lightMode" className="dark-mode-btn">

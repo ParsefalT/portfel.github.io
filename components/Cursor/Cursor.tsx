@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-export default function Cursor() {
+export default function Cursor(): JSX.Element {
 	useEffect(() => {
 		const cursorBall = document.querySelector(".cursor-ball") as HTMLDivElement;
 		document.addEventListener("mousemove", (e) => {
