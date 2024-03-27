@@ -2,7 +2,8 @@
 import { IBtnProps } from "./BtnCustom.interface";
 import cn from "classnames";
 import styles from "./BtnCustom.module.css";
-import { useEffect, useRef, useState } from "react";
+import { useEffect } from "react";
+import { useLocaleStorage } from "hooks/useLocaleStorage";
 
 export const BtnCustom = <IBtn extends IBtnProps>({
 	className,
@@ -10,20 +11,23 @@ export const BtnCustom = <IBtn extends IBtnProps>({
 	type,
 	children,
 }: IBtn): JSX.Element => {
-	const [colorMode, setColorMode] = useState<boolean>(false);
-	const btnRef = useRef<HTMLButtonElement | null>(null);
+	const [val, setVal] = useLocaleStorage<string>("colorMode", "dark");
 
 	const toggleDarkMode = () => {
-		setColorMode((state) => !state);
+		if (typeof setVal === "function") {
+			setVal((value) => {
+				return value == "light" ? "dark" : "light";
+			});
+		}
 	};
 
 	useEffect(() => {
-		if (colorMode == true) {
+		if (val == "light") {
 			document.body.classList.add("light");
 		} else {
 			document.body.classList.remove("light");
 		}
-	}, [colorMode]);
+	}, [val]);
 
 	// fetch("https://raw.githubusercontent.com/ParsefalT/linuxHellper/main/linuxHelper", {
 	// 	method: "GET",
@@ -40,10 +44,9 @@ export const BtnCustom = <IBtn extends IBtnProps>({
 	// https://raw.githubusercontent.com/ParsefalT/linuxHellper/main/linuxHelper.txt
 	return (
 		<button
-			ref={btnRef}
 			className={cn(styles[className], {
 				[styles.mainBtn]: type == "main",
-				[styles["dark-mode-btn--active"]]: colorMode,
+				[styles["dark-mode-btn--active"]]: val == "light",
 			})}
 			onClick={() => (type == "lightMode" ? toggleDarkMode() : undefined)}
 		>

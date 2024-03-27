@@ -2,7 +2,7 @@
 .nav {
     display: flex;
     align-items: center;
-	padding: 20px 0;
+	padding: 20px 120px;
 	background-color: var(--nav-bg);
 	border-bottom: 1px solid var(--nav-border);
 	color: var(--nav-text);

@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import styles from "./Navbar.module.css";
 import cn from "classnames";
@@ -60,7 +61,7 @@ export const Navbar = () => {
 				</li> */}
 			</ul>
 
-			<BtnCustom type="lightMode" className="dark-mode-btn">
+			<BtnCustom type="lightMode" className="dark-mode-btn" path={pathname}>
 				<MoonSvg className={styles["dark-mode-btn__icon"]} />
 				<SunSvg className={styles["dark-mode-btn__icon"]} />
 			</BtnCustom>
