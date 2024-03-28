@@ -7,7 +7,16 @@ import MoonSvg from "../../../assets/icons/moon.svg";
 import SunSvg from "../../../assets/icons/sun.svg";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { BtnCustom } from "@/components/BtnCustom/BtnCustom";
+
+import dynamic from "next/dynamic";
+const SomeBtn = dynamic(
+	() => import("@/components/BtnCustom/BtnCustom").then((btn) => btn.BtnCustom),
+	{
+		ssr: false,
+		loading: () => <span>...</span>,
+	},
+);
+
 export const Navbar = () => {
 	const pathname = usePathname();
 
@@ -60,10 +69,10 @@ export const Navbar = () => {
 				</li> */}
 			</ul>
 
-			<BtnCustom type="lightMode" className="dark-mode-btn">
+			<SomeBtn type="lightMode" className="dark-mode-btn">
 				<MoonSvg className={styles["dark-mode-btn__icon"]} />
 				<SunSvg className={styles["dark-mode-btn__icon"]} />
-			</BtnCustom>
+			</SomeBtn>
 		</nav>
 	);
 };

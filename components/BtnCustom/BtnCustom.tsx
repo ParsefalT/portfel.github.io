@@ -11,7 +11,7 @@ export const BtnCustom = <IBtn extends IBtnProps>({
 	type,
 	children,
 }: IBtn): JSX.Element => {
-	const [color, setColor] = useLocaleStorage<string>("colorMode", "dark");
+	const [color, setColor] = useLocaleStorage("colorMode", "dark");
 
 	const toggleDarkMode = () => {
 		if (typeof setColor === "function") {

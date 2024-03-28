@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export const useLocaleStorage = <T>(key: string, initialValue: T) => {
+export const useLocaleStorage = (key: string, initialValue: string) => {
 	const [state, setState] = useState(initialValue);
 
 	useEffect(() => {
@@ -14,7 +14,7 @@ export const useLocaleStorage = <T>(key: string, initialValue: T) => {
 		});
 	}, [state, initialValue, key]);
 
-	const setValue = (value: (arg0: any) => any) => {
+	const setValue = (value: (arg: string) => string) => {
 		try {
 			const valueToStore = value instanceof Function ? value(state) : value;
 			localStorage.setItem(key, JSON.stringify(valueToStore));
