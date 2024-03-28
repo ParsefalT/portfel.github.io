@@ -137,7 +137,7 @@ body {
   font-style: normal;
   color: white !important;
   background-color: var(--black) !important;
-  transition: all .4s;
+  transition: all .2s;
 }
 
 .light {
