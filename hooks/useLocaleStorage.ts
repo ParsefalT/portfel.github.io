@@ -1,28 +1,34 @@
-import { useState, useEffect } from "react";
+"use client";
+import { useState, useEffect, SetStateAction } from "react";
 
-export const useLocaleStorage = (key: string, initialValue: string) => {
-	const [state, setState] = useState(initialValue);
+// //get value
+// export function getItemStorage(
+// 	key: string,
+// 	setItem: { (value: SetStateAction<string>): void; (arg0: any): void },
+// ) {
+// 	const value = localStorage.getItem(key) as string;
+// 	localStorage.setItem(key, value);
+// 	setItem(JSON.parse(value));
+// }
 
-	useEffect(() => {
-		setState(() => {
-			try {
-				const value = localStorage.getItem(key);
-				return value ? JSON.parse(value) : initialValue;
-			} catch (error) {
-				console.log(error);
-			}
-		});
-	}, [state, initialValue, key]);
+// //set value
+// export function setItemStorage(
+// 	key: string,
+// 	value: string,
+// 	setItem: { (value: SetStateAction<string>): void; (arg0: any): void },
+// ) {
+// 	const valueToStore = value;
+// 	localStorage.setItem(key, JSON.stringify(valueToStore));
+// 	setItem(valueToStore);
+// }
 
-	const setValue = (value: (arg: string) => string) => {
-		try {
-			const valueToStore = value instanceof Function ? value(state) : value;
-			localStorage.setItem(key, JSON.stringify(valueToStore));
-			setState(value);
-		} catch (error) {
-			console.log(error);
-		}
-	};
+// export const useLocaleStorage = (key: string) => {
+// 	const [state, setState] = useState("");
 
-	return [state, setValue];
-};
+// 	const setValue = (value: string) => {
+// 		getItemStorage(key, setState);
+// 		return setItemStorage(key, value, setState);
+// 	};
+
+// 	return [state, setValue] as any;
+// };

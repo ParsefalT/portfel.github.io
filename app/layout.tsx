@@ -2,12 +2,12 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Navbar } from "./components/appMiddle";
+import Cursor from "@/components/Cursor/Cursor";
 import { Inter } from "next/font/google";
 import { Provider } from "react-redux";
 import { store } from "@/storeRedux/store";
-import { Navbar } from "./components/appMiddle";
 import { sliceActions } from "@/storeRedux/slice";
-import Cursor from "@/components/Cursor/Cursor";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
@@ -16,6 +16,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	store.dispatch(sliceActions.show("asd"));
+
 	return (
 		<html lang="en">
 			<head>
@@ -26,15 +27,13 @@ export default function RootLayout({
 					rel="stylesheet"
 				/>
 			</head>
-			<Provider store={store}>
-				<body className={inter.className}>
+			<body className={inter.className} id="gang">
+				<Provider store={store}>
 					<Cursor />
-					{/* <div className="wrapper"> */}
 					<Navbar />
 					{children}
-					{/* </div> */}
-				</body>
-			</Provider>
+				</Provider>
+			</body>
 		</html>
 	);
 }
