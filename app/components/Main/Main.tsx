@@ -22,10 +22,10 @@ export const Main = (): JSX.Element => {
 							/>
 						</div>
 					</li>
-					<li className={styles["content-list__item"]}>
+					{/* <li className={styles["content-list__item"]}>
 						<HTag type="h2">Backend</HTag>
 						<p>NodeJS, MySQL, MongoDB, PHP</p>
-					</li>
+					</li> */}
 				</ul>
 			</div>
 		</main>
