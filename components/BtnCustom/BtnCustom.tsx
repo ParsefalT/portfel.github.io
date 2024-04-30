@@ -28,11 +28,11 @@ export const BtnCustom = <IBtn extends IBtnProps>({
 		} else {
 			document.body.classList.remove("light");
 		}
-		localStorage.setItem("mode", theme);
+		localStorage.setItem("mode", theme as string);
 	}, [theme]);
 
 	function toggleTheme() {
-		setTheme((state: string) => {
+		setTheme((state) => {
 			return state === "dark" ? "light" : "dark";
 		});
 	}
