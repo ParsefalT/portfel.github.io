@@ -51,9 +51,9 @@ export const Navbar = () => {
 				</li>
 				{/* <li className={styles["nav-list__item"]}>
 					<Link
-						href={{ pathname: "/pages/recomendation" }}
+						href={{ pathname: "/pages/recommendation" }}
 						className={cn(styles["nav-list__link"], {
-							[styles["active"]]: pathname == "/pages/recomendation",
+							[styles["active"]]: pathname == "/pages/recommendation",
 						})}
 					>
 						Recomendation
@@ -61,10 +61,11 @@ export const Navbar = () => {
 				</li> */}
 			</ul>
 
-			{/* <BtnCustom type="lightMode" className="dark-mode-btn">
+			{/* --- must do it --- */}
+			<BtnCustom type="lightMode" className="dark-mode-btn">
 				<MoonSvg className={styles["dark-mode-btn__icon"]} />
 				<SunSvg className={styles["dark-mode-btn__icon"]} />
-			</BtnCustom> */}
+			</BtnCustom>
 		</nav>
 	);
 };

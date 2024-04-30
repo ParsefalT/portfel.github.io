@@ -8,6 +8,7 @@ import { Inter } from "next/font/google";
 import { Provider } from "react-redux";
 import { store } from "@/storeRedux/store";
 import { sliceActions } from "@/storeRedux/slice";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
