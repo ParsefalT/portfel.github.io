@@ -40,7 +40,7 @@
     "./dist/types/**/*.ts",
     "dist/types/**/*.ts",
     "build/types/**/*.ts"
-  ],
+, "context/ThemeContext.js", "context/ThemeContext.еs"  ],
   "exclude": [
     "node_modules"
   ]

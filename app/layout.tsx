@@ -8,6 +8,7 @@ import { Inter } from "next/font/google";
 import { Provider } from "react-redux";
 import { store } from "@/storeRedux/store";
 import { sliceActions } from "@/storeRedux/slice";
+import { ThemeProvider } from "context/ThemeContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,11 +30,13 @@ export default function RootLayout({
 				/>
 			</head>
 			<body className={inter.className} id="gang">
-				<Provider store={store}>
-					<Cursor />
-					<Navbar />
-					{children}
-				</Provider>
+				<ThemeProvider>
+					<Provider store={store}>
+						<Cursor />
+						<Navbar />
+						{children}
+					</Provider>
+				</ThemeProvider>
 			</body>
 		</html>
 	);

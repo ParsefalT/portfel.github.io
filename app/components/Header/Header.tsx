@@ -1,13 +1,14 @@
-import { HTag } from "@/components/HTag/HTag";
 import styles from "./Header.module.css";
-import { BtnCustom } from "@/components/BtnCustom/BtnCustom";
+import { HTag } from "@/components/HTag/HTag";
+import BtnMain from "@/components/BtnMain/BtnMain";
+
 export const Header = () => {
 	return (
 		<header className={styles["header"]}>
 			<div className={styles["header__wrapper"]}>
 				<HTag type="h1">
 					<strong>
-						Hi, my name is <em>Sergey</em>
+						Hi, my name is <em>Sergei</em>
 					</strong>
 					<br />a Web developer
 				</HTag>
@@ -15,7 +16,7 @@ export const Header = () => {
 					<p>with passion for learning and creating.</p>
 				</div>
 				<a href="#" download="myCV" rel="noreferrer">
-					<BtnCustom className="btn" value="Download CV" type="main" />
+					<BtnMain className="btn" value="Download CV" typeBtn="main" />
 				</a>
 			</div>
 		</header>

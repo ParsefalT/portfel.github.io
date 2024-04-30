@@ -253,46 +253,11 @@
 	margin-top: 0.5em;
 }
 
-/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./components/BtnCustom/BtnCustom.module.css ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************/
-/* Btn */
-.BtnCustom_btn__005cF {
-	display: inline-block;
-	height: 48px;
-	padding: 12px 28px;
-    text-decoration: none;
-	border-radius: 5px;
-	color: var(--white);
-	letter-spacing: 0.15px;
-	font-size: 16px;
-	font-weight: 500;
-    border: none;
-	transition: all .1s ease-out;
-}
-
-.BtnCustom_mainBtn__wuPc_ {
-	background-color: var(--accent);
-}
-
-.BtnCustom_mainBtn__wuPc_:active {
-	background-color: var(--primary-hover);
-}
-
-.BtnCustom_btn__005cF:hover {
-	box-shadow: 0px 0px 12px 3px var(--primary-hover);
-	opacity: 0.9;
-	transform: scale(1.1);
-}
-
-.BtnCustom_btn__005cF:active {
-	position: relative;
-	top: 1px;
-}
-
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./components/BtnTheme/BtnTheme.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
 /* Dark mode btn */
-
-.BtnCustom_dark-mode-btn__NpVIe {
+.BtnTheme_dark-mode-btn__YK3Wz {
 	order: 9;
 	margin-left: 30px;
 	position: relative;
@@ -307,7 +272,7 @@
 	background-color: #272727;
 }
 
-.BtnCustom_dark-mode-btn__NpVIe::before {
+.BtnTheme_dark-mode-btn__YK3Wz::before {
 	content: '';
 
 	position: absolute;
@@ -324,11 +289,47 @@
 	transition: left 0.2s ease;
 }
 
-.BtnCustom_dark-mode-btn--active__yJ0TQ::before {
+.BtnTheme_dark-mode-btn--active__ilGR_::before {
 	left: 25px;
 }
 
 
+/*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./components/BtnMain/BtnMain.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************/
+/* Btn */
+.BtnMain_btn__XujCK {
+	display: inline-block;
+	height: 48px;
+	padding: 12px 28px;
+    text-decoration: none;
+	border-radius: 5px;
+	color: var(--white);
+	letter-spacing: 0.15px;
+	font-size: 16px;
+	font-weight: 500;
+    border: none;
+	transition: all .1s ease-out;
+}
+
+.BtnMain_mainBtn__6Laml {
+	background-color: var(--accent);
+}
+
+.BtnMain_mainBtn__6Laml:active {
+	background-color: var(--primary-hover);
+}
+
+.BtnMain_btn__XujCK:hover {
+	box-shadow: 0px 0px 12px 3px var(--primary-hover);
+	opacity: 0.9;
+	transform: scale(1.1);
+}
+
+.BtnMain_btn__XujCK:active {
+	position: relative;
+	top: 1px;
+}
 /*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./components/LinkCustom/LinkCustom.module.css ***!
   \***************************************************************************************************************************************************************************************************************************************************************************************/
