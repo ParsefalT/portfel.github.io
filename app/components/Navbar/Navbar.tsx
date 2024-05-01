@@ -62,10 +62,10 @@ export const Navbar = () => {
 			</ul>
 
 			{/* --- must do it --- */}
-			<BtnTheme className="dark-mode-btn">
+			{/* <BtnTheme className="dark-mode-btn">
 				<MoonSvg className={styles["dark-mode-btn__icon"]} />
 				<SunSvg className={styles["dark-mode-btn__icon"]} />
-			</BtnTheme>
+			</BtnTheme> */}
 		</nav>
 	);
 };

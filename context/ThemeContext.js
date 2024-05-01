@@ -1,4 +1,3 @@
-// /components/ThemeContext.js
 import { createContext, useContext, useLayoutEffect, useState } from "react";
 
 const ThemeContext = createContext();
@@ -6,7 +5,7 @@ const ThemeContext = createContext();
 export const useTheme = () => useContext(ThemeContext);
 
 export const ThemeProvider = ({ children }) => {
-	const [theme, setTheme] = useState("dark");
+	const [theme, setTheme] = useState();
 
 	useLayoutEffect(() => {
 		const localTheme = window.localStorage.getItem("theme");

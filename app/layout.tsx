@@ -9,6 +9,7 @@ import { Provider } from "react-redux";
 import { store } from "@/storeRedux/store";
 import { sliceActions } from "@/storeRedux/slice";
 import { ThemeProvider } from "context/ThemeContext";
+import { Suspense, useEffect, useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +19,10 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	store.dispatch(sliceActions.show("asd"));
-
+	// const [load, setLoad] = useState(true);
+	// useEffect(() => {
+	// 	setTimeout(() => setLoad(false), 2500);
+	// }, []);
 	return (
 		<html lang="en">
 			<head>
